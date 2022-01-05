@@ -1,0 +1,200 @@
+.navbar{
+  display:flex;
+  margin:2px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-color);
+  align-items: center;
+  padding: 0px 24px;
+  background-color: white;
+  position: sticky;
+  top:0;
+  z-index: 25;
+}
+
+
+.introduce_profile {
+  position: absolute;
+  left:150px;
+  top:120px;
+  animation: showProfile 0.5s;
+  animation-delay:0s;
+}
+
+.introduce_glasses {
+  position: absolute;
+  z-index: 1;
+  left:150px;
+  top:120px;
+  animation: showGlasses 1s;
+  animation-delay:0.2s;
+  animation-fill-mode: both;
+}
+
+.introduce_explanation .introduce01{
+  position: absolute;
+  left:350px;
+  top:140px;
+  font-size: 1.5vw;
+  animation: showProfile 0.5s;
+  animation-delay:0s;
+  animation-fill-mode: both;
+}
+
+
+.introduce_computer {
+  position: absolute;
+  right:100px;
+  top:400px;
+  max-width: 300px;
+  animation: showProfile 0.5s;
+  animation-delay:0.5s;
+  animation-fill-mode: both;
+}
+
+.introduce_coding {
+  position: absolute;
+  z-index: 1;
+  right:100px;
+  top:400px;
+  max-width: 300px;
+  animation: showCoding 1s;
+  animation-delay:0.8s;
+  animation-fill-mode: both;
+}
+
+.introduce_explanation .introduce02{
+  position: absolute;
+  width: 70%;
+  left:180px;
+  top:430px;
+  font-size: 1.5vw;
+  animation: showProfile 0.5s;
+  animation-delay:0.5s;
+  animation-fill-mode: both;
+}
+
+.introduce_fist{
+  position: absolute;
+  max-width: 220px;
+  left:140px;
+  top:700px;
+  animation: showProfile 0.5s;
+  animation-delay:1.2s;
+  animation-fill-mode: both;
+}
+
+.introduce_explanation img[class*="introduce_fist_effect"]{
+  position: absolute;
+  max-width: 220px;
+  left:140px;
+  top:700px;
+}
+
+.introduce_fist_effect1{
+  animation: showFistEffect 1s;
+  animation-delay:1.5s;
+  animation-fill-mode: both;
+}
+
+.introduce_fist_effect2{
+  animation: showFistEffect 1s;
+  animation-delay:1.6s;
+  animation-fill-mode: both;
+}
+
+.introduce_fist_effect3{
+  animation: showFistEffect 1s;
+  animation-delay:1.7s;
+  animation-fill-mode: both;
+}
+
+.introduce_fist_effect4{
+  animation: showFistEffect 1s;
+  animation-delay:1.8s;
+  animation-fill-mode: both;
+}
+
+.introduce_fist_effect5{
+  animation: showFistEffect 1s;
+  animation-delay:1.9s;
+  animation-fill-mode: both;
+}
+
+.introduce_fist_effect6{
+  animation: showFistEffect 1s;
+  animation-delay:2.0s;
+  animation-fill-mode: both;
+}
+
+.introduce_explanation .introduce03{
+  position: absolute;
+  width: 70%;
+  left:350px;
+  top:680px;
+  font-size: 1.5vw;
+  animation: showProfile 0.5s;
+  animation-delay:1.2s;
+  animation-fill-mode: both;
+}
+
+/* 타이틀 애니메이션 */
+
+@keyframes showProfile {
+  from{
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes showGlasses {
+  from{
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes showCoding {
+  from{
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes showFistEffect {
+  from{
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes showFist {
+  from{
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
